@@ -301,7 +301,7 @@
     .packs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;}
     .pack-card{background:#fff;border:1.5px solid #ddefd0;border-radius:22px;overflow:hidden;transition:all .3s;position:relative;display:flex;flex-direction:column;}
     .pack-card:hover{box-shadow:0 20px 56px rgba(45,90,27,.16);transform:translateY(-5px);border-color:#a8d08a;}
-    .pack-img-wrap{width:100%;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,var(--green-light),#d4eebc);position:relative;}
+    .pack-img-wrap{width:100%;height:100%;overflow:hidden;background:linear-gradient(135deg,var(--green-light),#d4eebc);position:relative;}
     .pack-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
     .pack-card:hover .pack-img-wrap img{transform:scale(1.04);}
     .pack-popular-badge{position:absolute;top:14px;left:14px;background:#f0a500;color:#fff;font-size:.7rem;font-weight:700;border-radius:50px;padding:4px 12px;font-family:'Inter',sans-serif;z-index:1;}
