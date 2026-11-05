@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Tasty Thekua – Authentic Homemade Thekua in Kolkata & Howrah | Free Delivery</title>
+<meta name="description" content="Order authentic handmade Thekua online in Kolkata and Howrah. Pure ghee, wheat & jaggery Thekua – no preservatives, delivered fresh. Free delivery. Call or WhatsApp to order!"/>
+<meta name="keywords" content="thekua kolkata, thekua howrah, buy thekua online, homemade thekua, bihari thekua, thekua delivery kolkata, chhath puja thekua, thekua near me, traditional thekua, tasty thekua"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://tastythekua.in/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://tastythekua.in/"/>
+<meta property="og:title" content="Tasty Thekua – Best Homemade Thekua in Kolkata & Howrah"/>
+<meta property="og:description" content="Authentic handmade Thekua delivered to your door in Kolkata and Howrah. Free delivery. Order via WhatsApp or Call."/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Tasty Thekua","url":"https://tastythekua.in","description":"Authentic homemade Thekua made with pure ghee, wheat flour and jaggery. Delivered fresh across Kolkata and Howrah.","address":{"@type":"PostalAddress","addressLocality":"Kolkata","addressRegion":"West Bengal","addressCountry":"IN"},"areaServed":["Kolkata","Howrah","West Bengal"],"servesCuisine":["Indian","Bengali","Bihari"],"telephone":"+919999999999","openingHours":"Mo-Su 09:00-21:00"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Thekua made of?","acceptedAnswer":{"@type":"Answer","text":"Thekua is made from whole wheat flour, desi jaggery and pure cow ghee with cardamom and fennel. No preservatives or artificial colours."}},{"@type":"Question","name":"Do you deliver in Howrah?","acceptedAnswer":{"@type":"Answer","text":"Yes, free delivery across all Howrah areas including Shibpur, Liluah, Bally, Santragachi."}},{"@type":"Question","name":"What is the shelf life?","acceptedAnswer":{"@type":"Answer","text":"Up to 2 weeks at room temperature, 1 month refrigerated."}}]}</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<!-- Swiper 11 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Lucide Icons -->
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.408.0/dist/umd/lucide.min.js"></script>
+
+<!-- Fallback: if any CDN script fails, make everything visible -->
+<noscript><style>.reveal,.hero-eyebrow,.hero-h1,.hero-desc,.hero-actions,.hero-stats,.hero-scroll{opacity:1!important;transform:none!important}</style></noscript>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ivory:#FAF7F2;
+  --ivory-2:#F3EDE3;
+  --ivory-3:#EAE0D2;
+  --espresso:#1E0F05;
+  --espresso-2:#2D1A0A;
+  --amber:#C4651A;
+  --amber-2:#E07B2A;
+  --amber-light:#F5D9B8;
+  --sage:#6B7C5E;
+  --gold:#B8902A;
+  --cream:#FFF9F3;
+  --text-dark:#1E0F05;
+  --text-mid:#5A3E28;
+  --text-soft:#8B6E52;
+  --text-muted:#B09880;
+  --radius-sm:6px;
+  --radius-md:14px;
+  --radius-lg:24px;
+  --radius-xl:40px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--ivory);color:var(--text-dark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+/* ── UTILITY ── */
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ── NAV ── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0;transition:all .4s ease}
+#nav.scrolled{background:rgba(30,15,5,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:20px 40px;transition:padding .4s}
+#nav.scrolled .nav-inner{padding:14px 40px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-mark{width:38px;height:38px;background:var(--amber);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;line-height:1}
+.nav-logo-text{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:.01em}
+.nav-logo-sub{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:.08em;font-weight:400;text-transform:uppercase;font-family:'DM Sans',sans-serif}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:14px;color:rgba(255,255,255,.75);font-weight:400;letter-spacing:.02em;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.btn-wa{display:flex;align-items:center;gap:8px;background:#22C55E;color:#fff;padding:10px 20px;border-radius:var(--radius-xl);font-size:13px;font-weight:500;transition:all .2s;letter-spacing:.02em}
+.btn-wa:hover{background:#16A34A;transform:translateY(-1px)}
+.btn-call{display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);padding:10px 18px;border-radius:var(--radius-xl);font-size:13px;font-weight:400;transition:all .2s}
+.btn-call:hover{border-color:rgba(255,255,255,.6);color:#fff}
+.nav-mobile-wa{display:none}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:var(--espresso);position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,15,5,1) 0%,rgba(45,26,10,.85) 60%,rgba(196,101,26,.2) 100%)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero-content{position:relative;z-index:2;padding:0 40px;max-width:720px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(196,101,26,.5);color:var(--amber-2);padding:7px 16px;border-radius:var(--radius-xl);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;margin-bottom:28px;opacity:0}
+.hero-h1{font-size:clamp(52px,8vw,96px);color:#fff;line-height:1.0;margin-bottom:24px;opacity:0}
+.hero-h1 em{color:var(--amber-2);font-style:italic}
+.hero-desc{font-size:17px;color:rgba(255,255,255,.65);line-height:1.7;max-width:460px;margin-bottom:40px;font-weight:300;opacity:0}
+.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;opacity:0}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--amber);color:#fff;padding:16px 32px;border-radius:var(--radius-xl);font-size:15px;font-weight:500;transition:all .25s;letter-spacing:.01em}
+.btn-primary:hover{background:var(--amber-2);transform:translateY(-2px);box-shadow:0 12px 32px rgba(196,101,26,.4)}
+.btn-secondary{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.85);padding:16px 28px;border-radius:var(--radius-xl);font-size:15px;font-weight:400;transition:all .25s}
+.btn-secondary:hover{border-color:rgba(255,255,255,.65);color:#fff}
+.hero-stats{position:absolute;right:60px;top:50%;transform:translateY(-50%);z-index:2;display:flex;flex-direction:column;gap:4px;opacity:0}
+.stat-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:20px 28px;border-radius:var(--radius-md);min-width:170px}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:#fff;line-height:1}
+.stat-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px;letter-spacing:.04em}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.4);font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:0}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,.4),transparent);animation:scrollPulse 2s ease infinite}
+@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(1)}50%{opacity:1;transform:scaleY(.8)}}
+
+/* ── ABOUT STRIP ── */
+.about-strip{background:var(--espresso-2);padding:28px 0}
+.strip-inner{display:flex;align-items:center;justify-content:center;gap:0;overflow:hidden}
+.strip-item{display:flex;align-items:center;gap:10px;padding:0 40px;border-right:1px solid rgba(255,255,255,.1);flex:1;justify-content:center}
+.strip-item:last-child{border-right:none}
+.strip-item-icon{color:var(--amber-2);display:flex}
+.strip-item-text{font-size:13px;color:rgba(255,255,255,.7);font-weight:400;white-space:nowrap}
+.strip-item-text strong{color:#fff;font-weight:500}
+
+/* ── SECTION SHARED ── */
+.section-label{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);font-weight:500;margin-bottom:12px;font-family:'DM Sans',sans-serif}
+.section-h2{font-size:clamp(36px,5vw,56px);color:var(--espresso);margin-bottom:16px;line-height:1.1}
+.section-desc{font-size:16px;color:var(--text-mid);line-height:1.75;max-width:520px;font-weight:300}
+.section-desc a{color:var(--amber);font-weight:500}
+
+/* ── STORY / ABOUT ── */
+.about-section{padding:120px 0;background:var(--ivory)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-images{position:relative;height:560px}
+.about-img-main{width:72%;height:420px;object-fit:cover;border-radius:var(--radius-lg);position:absolute;bottom:0;left:0}
+.about-img-accent{width:52%;height:280px;object-fit:cover;border-radius:var(--radius-md);position:absolute;top:0;right:0;border:6px solid var(--ivory)}
+.about-badge{position:absolute;bottom:60px;right:-10px;background:var(--espresso);color:#fff;padding:16px 20px;border-radius:var(--radius-md);min-width:140px;text-align:center;z-index:2}
+.about-badge-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--amber-2);line-height:1}
+.about-badge-text{font-size:11px;color:rgba(255,255,255,.6);margin-top:4px;letter-spacing:.05em}
+.about-text{padding-left:20px}
+.about-qualities{display:flex;flex-direction:column;gap:20px;margin-top:36px}
+.quality-item{display:flex;align-items:flex-start;gap:14px}
+.quality-icon{width:40px;height:40px;border-radius:var(--radius-sm);background:var(--amber-light);display:flex;align-items:center;justify-content:center;color:var(--amber);flex-shrink:0;margin-top:2px}
+.quality-title{font-size:15px;font-weight:500;color:var(--espresso);margin-bottom:4px}
+.quality-text{font-size:14px;color:var(--text-soft);line-height:1.6;font-weight:300}
+
+/* ── PACKAGES ── */
+.packages-section{padding:100px 0;background:var(--espresso)}
+.packages-section .section-h2{color:#fff}
+.packages-section .section-desc{color:rgba(255,255,255,.55)}
+.packages-section .section-label{color:var(--amber-2)}
+.packages-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px}
+.pkg-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pkg-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius-lg);overflow:hidden;transition:all .3s cubic-bezier(.25,.8,.25,1);cursor:pointer;position:relative}
+.pkg-card:hover{background:rgba(255,255,255,.09);border-color:rgba(196,101,26,.5);transform:translateY(-6px)}
+.pkg-card.featured{background:var(--amber);border-color:var(--amber)}
+.pkg-card.featured:hover{background:var(--amber-2);border-color:var(--amber-2)}
+.pkg-img-wrap{height:200px;overflow:hidden;position:relative}
+.pkg-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.pkg-card:hover .pkg-img-wrap img{transform:scale(1.06)}
+.pkg-badge{position:absolute;top:14px;left:14px;background:var(--espresso);color:#fff;font-size:11px;font-weight:500;padding:5px 12px;border-radius:var(--radius-xl);letter-spacing:.04em}
+.pkg-card.featured .pkg-badge{background:#fff;color:var(--amber)}
+.pkg-body{padding:22px}
+.pkg-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.2}
+.pkg-card.featured .pkg-name{color:var(--espresso)}
+.pkg-desc{font-size:13px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:18px;font-weight:300}
+.pkg-card.featured .pkg-desc{color:rgba(30,15,5,.7)}
+.pkg-footer{display:flex;align-items:center;justify-content:space-between}
+.pkg-price{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--amber-2)}
+.pkg-card.featured .pkg-price{color:var(--espresso)}
+.pkg-price span{font-size:13px;font-weight:400;color:rgba(255,255,255,.4);font-family:'DM Sans',sans-serif}
+.pkg-card.featured .pkg-price span{color:rgba(30,15,5,.5)}
+.pkg-btn{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff;transition:all .2s;flex-shrink:0}
+.pkg-card.featured .pkg-btn{background:var(--espresso);color:#fff}
+.pkg-btn:hover{background:var(--amber);transform:scale(1.1)}
+
+/* ── OCCASIONS ── */
+.occasions-section{padding:100px 0;background:var(--ivory)}
+.occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.occ-card{border-radius:var(--radius-lg);overflow:hidden;position:relative;cursor:pointer;aspect-ratio:4/3}
+.occ-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.occ-card:hover img{transform:scale(1.08)}
+.occ-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(30,15,5,.88) 0%,rgba(30,15,5,.2) 50%,transparent 100%)}
+.occ-content{position:absolute;bottom:0;left:0;right:0;padding:28px}
+.occ-icon{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;margin-bottom:12px;color:#fff}
+.occ-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;color:#fff;margin-bottom:6px}
+.occ-desc{font-size:13px;color:rgba(255,255,255,.65);line-height:1.5;font-weight:300}
+.occ-cta{margin-top:14px;display:inline-flex;align-items:center;gap:6px;color:var(--amber-2);font-size:13px;font-weight:500;opacity:0;transform:translateY(8px);transition:all .3s}
+.occ-card:hover .occ-cta{opacity:1;transform:translateY(0)}
+
+/* ── HOW TO ORDER ── */
+.order-section{padding:100px 0;background:var(--ivory-2)}
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:60px}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:24px;padding-bottom:40px;position:relative}
+.step:not(:last-child)::after{content:'';position:absolute;left:20px;top:46px;width:1px;height:calc(100% - 10px);background:var(--ivory-3)}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--espresso);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;flex-shrink:0;position:relative;z-index:1}
+.step-title{font-size:18px;font-weight:500;color:var(--espresso);margin-bottom:6px;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600}
+.step-text{font-size:14px;color:var(--text-soft);line-height:1.65;font-weight:300}
+.order-cta-box{background:var(--espresso);border-radius:var(--radius-lg);padding:48px;display:flex;flex-direction:column;gap:20px}
+.order-cta-box h3{font-family:'Cormorant Garamond',serif;font-size:36px;color:#fff;line-height:1.15}
+.order-cta-box p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.65;font-weight:300}
+.cta-btn-wa{display:flex;align-items:center;gap:10px;background:#22C55E;color:#fff;padding:16px 28px;border-radius:var(--radius-xl);font-size:15px;font-weight:500;transition:all .25s;width:fit-content}
+.cta-btn-wa:hover{background:#16A34A;transform:translateY(-2px)}
+.cta-btn-call{display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);padding:16px 28px;border-radius:var(--radius-xl);font-size:15px;font-weight:400;transition:all .25s;width:fit-content}
+.cta-btn-call:hover{border-color:rgba(255,255,255,.5);color:#fff}
+
+/* ── TESTIMONIALS ── */
+.testimonials-section{padding:100px 0;background:var(--ivory)}
+.testimonials-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px}
+.swiper-nav{display:flex;gap:10px}
+.swiper-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--ivory-3);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--espresso);cursor:pointer;transition:all .2s;flex-shrink:0}
+.swiper-btn:hover{background:var(--espresso);color:#fff;border-color:var(--espresso)}
+.test-card{background:#fff;border:1px solid var(--ivory-3);border-radius:var(--radius-lg);padding:36px;height:auto}
+.test-stars{display:flex;gap:3px;margin-bottom:20px;color:var(--amber)}
+.test-quote{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.5;color:var(--espresso);margin-bottom:28px;font-weight:400;font-style:italic}
+.test-author{display:flex;align-items:center;gap:14px}
+.test-avatar{width:46px;height:46px;border-radius:50%;object-fit:cover;background:var(--ivory-2)}
+.test-name{font-size:15px;font-weight:500;color:var(--espresso)}
+.test-loc{font-size:13px;color:var(--text-soft);margin-top:2px;display:flex;align-items:center;gap:5px}
+.swiper-pagination-bullet{background:var(--ivory-3)!important;opacity:1!important}
+.swiper-pagination-bullet-active{background:var(--amber)!important}
+
+/* ── DELIVERY AREAS ── */
+.delivery-section{padding:80px 0;background:var(--espresso-2)}
+.delivery-section .section-h2{color:#fff}
+.delivery-section .section-label{color:var(--amber-2)}
+.delivery-section .section-desc{color:rgba(255,255,255,.5)}
+.area-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.area-tag{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.75);padding:9px 20px;border-radius:var(--radius-xl);font-size:13px;font-weight:400;transition:all .2s;cursor:default}
+.area-tag:hover{background:rgba(196,101,26,.2);border-color:var(--amber);color:#fff}
+.delivery-free-badge{display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:#fff;padding:10px 24px;border-radius:var(--radius-xl);font-size:14px;font-weight:500;margin-bottom:28px}
+
+/* ── FAQ ── */
+.faq-section{padding:100px 0;background:var(--ivory)}
+.faq-grid{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;margin-top:0}
+.faq-side{position:sticky;top:120px}
+.faq-side-img{width:100%;border-radius:var(--radius-lg);object-fit:cover;height:380px;margin-bottom:28px}
+.faq-contact-box{background:var(--espresso);border-radius:var(--radius-md);padding:28px}
+.faq-contact-box h4{font-family:'Cormorant Garamond',serif;font-size:24px;color:#fff;margin-bottom:8px}
+.faq-contact-box p{font-size:13px;color:rgba(255,255,255,.55);margin-bottom:20px;line-height:1.6;font-weight:300}
+.faq-wa-btn{display:flex;align-items:center;gap:8px;background:#22C55E;color:#fff;padding:12px 20px;border-radius:var(--radius-xl);font-size:14px;font-weight:500;width:100%;justify-content:center;transition:all .2s}
+.faq-wa-btn:hover{background:#16A34A}
+.faq-items{display:flex;flex-direction:column;gap:4px}
+.faq-item{border:1px solid var(--ivory-3);border-radius:var(--radius-md);overflow:hidden;background:#fff}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:22px 26px;cursor:pointer;gap:16px;transition:background .2s}
+.faq-q:hover{background:var(--ivory)}
+.faq-q-text{font-size:17px;font-weight:500;color:var(--espresso);font-family:'Cormorant Garamond',serif;line-height:1.3}
+.faq-icon{width:30px;height:30px;border-radius:50%;background:var(--ivory-2);display:flex;align-items:center;justify-content:center;color:var(--amber);flex-shrink:0;transition:all .3s}
+.faq-item.open .faq-icon{background:var(--amber);color:#fff;transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-inner{padding:0 26px 22px;font-size:15px;color:var(--text-soft);line-height:1.75;font-weight:300}
+
+/* ── FOOTER ── */
+footer{background:var(--espresso);padding:80px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:#fff;margin-bottom:12px}
+.footer-desc{font-size:14px;color:rgba(255,255,255,.45);line-height:1.75;max-width:260px;font-weight:300;margin-bottom:28px}
+.footer-contacts{display:flex;flex-direction:column;gap:12px}
+.footer-contact-item{display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.65)}
+.footer-contact-item a{color:rgba(255,255,255,.65);transition:color .2s}
+.footer-contact-item a:hover{color:#fff}
+.footer-col h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px;font-family:'DM Sans',sans-serif;font-weight:500}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.footer-col ul li a{font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;font-weight:300}
+.footer-col ul li a:hover{color:var(--amber-2)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;flex-wrap:gap}
+.footer-copy{font-size:13px;color:rgba(255,255,255,.25);font-weight:300}
+.footer-seo{font-size:12px;color:rgba(255,255,255,.18)}
+
+/* ── FLOAT WA ── */
+.float-wa{position:fixed;bottom:28px;right:28px;z-index:200;width:58px;height:58px;border-radius:50%;background:#22C55E;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 28px rgba(34,197,94,.45);transition:all .3s}
+.float-wa:hover{transform:scale(1.08);background:#16A34A}
+.float-wa-ring{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(34,197,94,.5);animation:ring 2.5s ease-out infinite}
+@keyframes ring{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(1.5)}}
+
+/* ── REVEAL ── handled by JS only so content is visible if scripts fail */
+.reveal{}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .pkg-cards{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+}
+@media(max-width:900px){
+  .about-grid,.order-grid,.faq-grid{grid-template-columns:1fr}
+  .hero-stats{display:none}
+  .occ-grid{grid-template-columns:1fr 1fr}
+  .faq-side{position:static}
+  .faq-side-img{height:260px}
+  .hero-content{padding:0 24px}
+  .nav-links{display:none}
+  .nav-mobile-wa{display:flex}
+  .strip-inner{flex-wrap:wrap;gap:16px}
+  .strip-item{border:none;flex:none;width:50%}
+  .packages-header{flex-direction:column;align-items:flex-start;gap:16px}
+  .testimonials-header{flex-direction:column;align-items:flex-start;gap:20px}
+  .about-text{padding-left:0}
+}
+@media(max-width:600px){
+  .occ-grid{grid-template-columns:1fr}
+  .pkg-cards{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .nav-inner{padding:16px 20px}
+  .hero-content{padding:0 20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<header>
+<nav id="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Tasty Thekua home">
+      <div class="nav-logo-mark">T</div>
+      <div>
+        <div class="nav-logo-text">Tasty Thekua</div>
+        <div class="nav-logo-sub">tastythekua.in</div>
+      </div>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#about" role="listitem">Our Story</a>
+      <a href="#packages" role="listitem">Packages</a>
+      <a href="#occasions" role="listitem">Occasions</a>
+      <a href="#faq" role="listitem">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:+919999999999" class="btn-call" aria-label="Call to order">
+        <i data-lucide="phone" aria-hidden="true" width="15" height="15"></i>
+        Call
+      </a>
+      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua!" target="_blank" rel="noopener" class="btn-wa nav-mobile-wa" aria-label="Order on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true" width="15" height="15"></i>
+        WhatsApp
+      </a>
+      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua!" target="_blank" rel="noopener" class="btn-wa" aria-label="Order on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true" width="15" height="15"></i>
+        Order Now
+      </a>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" aria-label="Hero – Tasty Thekua">
+  <img class="hero-img" src="https://picsum.photos/seed/spices1/1600/900" alt="Traditional Indian sweets background" loading="eager"/>
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow" aria-label="Free delivery in Kolkata and Howrah">
+      <i data-lucide="truck" aria-hidden="true" width="13" height="13"></i>
+      Free delivery · Kolkata & Howrah
+    </div>
+    <h1 class="hero-h1">
+      Kolkata's finest<br/>
+      <em>homemade</em><br/>
+      Thekua
+    </h1>
+    <p class="hero-desc">Handcrafted daily with pure cow ghee, desi jaggery and whole wheat — the same recipe for three generations. No preservatives. No shortcuts.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua%20from%20tastythekua.in!" target="_blank" rel="noopener" class="btn-primary">
+        <i data-lucide="message-circle" aria-hidden="true" width="18" height="18"></i>
+        Order on WhatsApp
+      </a>
+      <a href="tel:+919999999999" class="btn-secondary">
+        <i data-lucide="phone" aria-hidden="true" width="17" height="17"></i>
+        Call to Order
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-hidden="true">
+    <div class="stat-card">
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Happy customers</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Pure cow ghee</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Preservatives</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- ══════════════ STRIP ══════════════ -->
+<div class="about-strip" aria-label="Key highlights">
+  <div class="strip-inner container">
+    <div class="strip-item">
+      <div class="strip-item-icon"><i data-lucide="droplets" aria-hidden="true" width="20" height="20"></i></div>
+      <div class="strip-item-text"><strong>Pure Ghee</strong> — no dalda</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-item-icon"><i data-lucide="truck" aria-hidden="true" width="20" height="20"></i></div>
+      <div class="strip-item-text"><strong>Free Delivery</strong> in KOL & HWH</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-item-icon"><i data-lucide="hand" aria-hidden="true" width="20" height="20"></i></div>
+      <div class="strip-item-text"><strong>Handmade</strong> daily to order</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-item-icon"><i data-lucide="shield-check" aria-hidden="true" width="20" height="20"></i></div>
+      <div class="strip-item-text"><strong>Cash on delivery</strong> — no prepayment</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section class="about-section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <img class="about-img-main" src="https://picsum.photos/seed/food42/700/560" alt="Freshly made Thekua in a traditional clay bowl" loading="lazy"/>
+        <img class="about-img-accent" src="https://picsum.photos/seed/spice88/420/320" alt="Pure cow ghee and jaggery ingredients" loading="lazy"/>
+        <div class="about-badge">
+          <div class="about-badge-num">3+</div>
+          <div class="about-badge-text">Generations of<br/>the same recipe</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-label">Our Story</div>
+        <h2 id="about-heading" class="section-h2">What makes Thekua so special?</h2>
+        <p class="section-desc"><strong>Thekua</strong> (also called Thekwa or Khajuria) is a beloved traditional sweet made during <em>Chhath Puja</em>, weddings and festivals. At Tasty Thekua, every piece is shaped by hand using wooden moulds — just as it was made in Bihar and eastern UP for centuries.</p>
+        <div class="about-qualities">
+          <div class="quality-item">
+            <div class="quality-icon"><i data-lucide="wheat" aria-hidden="true" width="18" height="18"></i></div>
+            <div>
+              <div class="quality-title">Whole wheat & desi jaggery</div>
+              <div class="quality-text">We use stone-ground atta and unrefined gur sourced from local farmers — the natural sweetness you can taste.</div>
+            </div>
+          </div>
+          <div class="quality-item">
+            <div class="quality-icon"><i data-lucide="flame" aria-hidden="true" width="18" height="18"></i></div>
+            <div>
+              <div class="quality-title">Deep-fried in pure cow ghee</div>
+              <div class="quality-text">No dalda, no refined oil. The ghee gives each piece its signature richness and extends freshness naturally.</div>
+            </div>
+          </div>
+          <div class="quality-item">
+            <div class="quality-icon"><i data-lucide="package-check" aria-hidden="true" width="18" height="18"></i></div>
+            <div>
+              <div class="quality-title">Made fresh, packed fresh</div>
+              <div class="quality-text">Sealed in food-grade airtight containers the same day. Stays fresh for 2 weeks at room temperature.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PACKAGES ══════════════ -->
+<section class="packages-section" id="packages" aria-labelledby="pkg-heading">
+  <div class="container">
+    <div class="packages-header">
+      <div>
+        <div class="section-label">Choose your pack</div>
+        <h2 id="pkg-heading" class="section-h2">Fresh from 500g to 2kg</h2>
+        <p class="section-desc">No minimum order fuss — start small or stock up for the whole family.</p>
+      </div>
+      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua!" target="_blank" rel="noopener" class="btn-primary reveal" style="margin-bottom:4px;flex-shrink:0">
+        <i data-lucide="message-circle" aria-hidden="true" width="17" height="17"></i>
+        Order Now
+      </a>
+    </div>
+
+    <div class="pkg-cards reveal">
+
+      <article class="pkg-card" itemscope itemtype="https://schema.org/Product">
+        <div class="pkg-img-wrap">
+          <img src="https://picsum.photos/seed/cookies11/500/280" alt="Classic Wheat Thekua 500g pack" loading="lazy"/>
+          <div class="pkg-badge">500g Pack</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-name" itemprop="name">Classic Wheat Thekua</div>
+          <div class="pkg-desc" itemprop="description">The original — pure wheat, jaggery, ghee. The taste Kolkata fell in love with.</div>
+          <div class="pkg-footer">
+            <div class="pkg-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">199</span>
+              <span>/ 500g</span>
+            </div>
+            <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Classic%20Thekua%20500g%20-%20Rs.199" target="_blank" rel="noopener" class="pkg-btn" aria-label="Order Classic Wheat Thekua on WhatsApp">
+              <i data-lucide="message-circle" aria-hidden="true" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card featured" itemscope itemtype="https://schema.org/Product">
+        <div class="pkg-img-wrap">
+          <img src="https://picsum.photos/seed/cookies22/500/280" alt="Coconut Thekua 1kg pack bestseller" loading="lazy"/>
+          <div class="pkg-badge">1kg · Bestseller</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-name" itemprop="name">Coconut Thekua</div>
+          <div class="pkg-desc" itemprop="description">Stuffed with fresh coconut and cardamom. Crisp outside, moist inside. Our most loved variety.</div>
+          <div class="pkg-footer">
+            <div class="pkg-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">399</span>
+              <span>/ 1kg</span>
+            </div>
+            <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Coconut%20Thekua%201kg%20-%20Rs.399" target="_blank" rel="noopener" class="pkg-btn" aria-label="Order Coconut Thekua on WhatsApp">
+              <i data-lucide="message-circle" aria-hidden="true" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card" itemscope itemtype="https://schema.org/Product">
+        <div class="pkg-img-wrap">
+          <img src="https://picsum.photos/seed/dryfruit77/500/280" alt="Dry Fruit Thekua premium 1.5kg pack" loading="lazy"/>
+          <div class="pkg-badge">1.5kg · Premium</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-name" itemprop="name">Dry Fruit Thekua</div>
+          <div class="pkg-desc" itemprop="description">Cashews, almonds and raisins folded in. The go-to for gifting and celebrations.</div>
+          <div class="pkg-footer">
+            <div class="pkg-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">749</span>
+              <span>/ 1.5kg</span>
+            </div>
+            <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Dry%20Fruit%20Thekua%201.5kg%20-%20Rs.749" target="_blank" rel="noopener" class="pkg-btn" aria-label="Order Dry Fruit Thekua on WhatsApp">
+              <i data-lucide="message-circle" aria-hidden="true" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pkg-card" itemscope itemtype="https://schema.org/Product">
+        <div class="pkg-img-wrap">
+          <img src="https://picsum.photos/seed/festival99/500/280" alt="Festival family Thekua 2kg bulk pack" loading="lazy"/>
+          <div class="pkg-badge">2kg · Family</div>
+        </div>
+        <div class="pkg-body">
+          <div class="pkg-name" itemprop="name">Festival Family Pack</div>
+          <div class="pkg-desc" itemprop="description">Mixed assortment for the whole family. Classic, Coconut, Sesame and Dry Fruit — all in one box.</div>
+          <div class="pkg-footer">
+            <div class="pkg-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="priceCurrency" content="INR">₹</span><span itemprop="price">950</span>
+              <span>/ 2kg</span>
+            </div>
+            <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Festival%20Family%20Pack%202kg%20-%20Rs.950" target="_blank" rel="noopener" class="pkg-btn" aria-label="Order Festival Family Pack on WhatsApp">
+              <i data-lucide="message-circle" aria-hidden="true" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ OCCASIONS ══════════════ -->
+<section class="occasions-section" id="occasions" aria-labelledby="occ-heading">
+  <div class="container">
+    <div class="reveal" style="max-width:580px">
+      <div class="section-label">Every celebration</div>
+      <h2 id="occ-heading" class="section-h2">The sweet that fits every occasion</h2>
+      <p class="section-desc">From sacred rituals to corporate gifting — Thekua carries meaning as much as flavour.</p>
+    </div>
+    <div class="occ-grid">
+
+      <div class="occ-card reveal">
+        <img src="https://picsum.photos/seed/festival1/700/500" alt="Chhath Puja festival celebration" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="sun" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Chhath Puja</div>
+          <div class="occ-desc">The sacred prasad of Chhath. We take special pre-orders to ensure fresh delivery across Kolkata and Howrah.</div>
+          <div class="occ-cta">
+            <span>Pre-book now</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="occ-card reveal" style="transition-delay:.08s">
+        <img src="https://picsum.photos/seed/diwali2/700/500" alt="Diwali gifting sweets" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="sparkles" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Diwali Gifting</div>
+          <div class="occ-desc">Beautiful gift-wrapped Thekua boxes — a thoughtful alternative to mithai. Available in 500g to 2kg.</div>
+          <div class="occ-cta">
+            <span>Gift packs available</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="occ-card reveal" style="transition-delay:.16s">
+        <img src="https://picsum.photos/seed/wedding3/700/500" alt="Wedding ceremony sweets distribution" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="heart" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Weddings</div>
+          <div class="occ-desc">Customised bulk orders for ceremonies and receptions. We handle 10 kg+ orders with ease across Kolkata.</div>
+          <div class="occ-cta">
+            <span>Get bulk pricing</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="occ-card reveal" style="transition-delay:.04s">
+        <img src="https://picsum.photos/seed/durga4/700/500" alt="Durga Puja festival" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="star" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Durga Puja</div>
+          <div class="occ-desc">The biggest celebration in Kolkata — Thekua as prasad and as a traditional welcome for guests.</div>
+          <div class="occ-cta">
+            <span>Order for puja</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="occ-card reveal" style="transition-delay:.12s">
+        <img src="https://picsum.photos/seed/corporate5/700/500" alt="Corporate gifting sweets" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="briefcase" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Corporate Gifting</div>
+          <div class="occ-desc">Branded packaging available. Minimum 20 boxes. We've delivered to offices across Kolkata and Howrah.</div>
+          <div class="occ-cta">
+            <span>Enquire for corporates</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="occ-card reveal" style="transition-delay:.2s">
+        <img src="https://picsum.photos/seed/snack6/700/500" alt="Daily snack tea time Thekua" loading="lazy"/>
+        <div class="occ-overlay" aria-hidden="true"></div>
+        <div class="occ-content">
+          <div class="occ-icon"><i data-lucide="coffee" aria-hidden="true" width="18" height="18"></i></div>
+          <div class="occ-name">Daily Tea Snack</div>
+          <div class="occ-desc">Not just for festivals — Thekua is the perfect crisp snack with your afternoon chai. Order any day, any time.</div>
+          <div class="occ-cta">
+            <span>Order anytime</span>
+            <i data-lucide="arrow-right" aria-hidden="true" width="14" height="14"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HOW TO ORDER ══════════════ -->
+<section class="order-section" id="order" aria-labelledby="order-heading">
+  <div class="container">
+    <div class="reveal" style="max-width:520px">
+      <div class="section-label">Simple process</div>
+      <h2 id="order-heading" class="section-h2">Getting Thekua to your door</h2>
+    </div>
+    <div class="order-grid">
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <div class="step-title">Pick your pack</div>
+            <div class="step-text">Choose from 500g, 1kg, 1.5kg or the 2kg family pack. Classic, Coconut, Dry Fruit or Sesame — or any mix you like.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <div class="step-title">WhatsApp or call us</div>
+            <div class="step-text">Drop us a message on WhatsApp or call. Share your name, address in Kolkata or Howrah, and your order. We confirm within minutes.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <div class="step-title">Receive & pay on delivery</div>
+            <div class="step-text">Fresh Thekua arrives at your door. Pay cash on delivery — no apps, no UPI needed. Zero prepayment risk.</div>
+          </div>
+        </div>
+        <div class="step" style="padding-bottom:0">
+          <div class="step-num" style="background:var(--amber)">4</div>
+          <div>
+            <div class="step-title">Enjoy — and reorder anytime</div>
+            <div class="step-text">Keep the number saved. Most customers order every month. Bulk orders for festivals? We've got you covered.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-cta-box reveal">
+        <h3>Ready to order your Thekua?</h3>
+        <p>Free delivery across all of Kolkata and Howrah. Same-day delivery available if you order before 2 PM. No minimum order.</p>
+        <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua%20from%20tastythekua.in!" target="_blank" rel="noopener" class="cta-btn-wa">
+          <i data-lucide="message-circle" aria-hidden="true" width="18" height="18"></i>
+          Order on WhatsApp
+        </a>
+        <a href="tel:+919999999999" class="cta-btn-call">
+          <i data-lucide="phone" aria-hidden="true" width="18" height="18"></i>
+          +91 99999 99999
+        </a>
+        <div style="display:flex;align-items:center;gap:8px;margin-top:8px">
+          <i data-lucide="clock" aria-hidden="true" width="14" height="14" style="color:rgba(255,255,255,.35)"></i>
+          <span style="font-size:13px;color:rgba(255,255,255,.35);font-weight:300">9 AM – 9 PM · Mon to Sun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section class="testimonials-section" id="testimonials" aria-labelledby="test-heading">
+  <div class="container">
+    <div class="testimonials-header">
+      <div class="reveal">
+        <div class="section-label">Customer love</div>
+        <h2 id="test-heading" class="section-h2">What Kolkata says<br/>about our Thekua</h2>
+      </div>
+      <div class="swiper-nav reveal">
+        <button class="swiper-btn test-prev" aria-label="Previous testimonial">
+          <i data-lucide="arrow-left" aria-hidden="true" width="18" height="18"></i>
+        </button>
+        <button class="swiper-btn test-next" aria-label="Next testimonial">
+          <i data-lucide="arrow-right" aria-hidden="true" width="18" height="18"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper testimonials-swiper reveal">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="test-card" itemscope itemtype="https://schema.org/Review">
+            <div class="test-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+            </div>
+            <blockquote class="test-quote" itemprop="reviewBody">"The smell of pure ghee when you open the pack — that itself tells you it's the real thing. Exactly the Chhath prasad taste I grew up with in Bhojpur."</blockquote>
+            <div class="test-author">
+              <img class="test-avatar" src="https://picsum.photos/seed/person1/80/80" alt="" loading="lazy"/>
+              <div>
+                <div class="test-name" itemprop="author">Priya Sharma</div>
+                <div class="test-loc">
+                  <i data-lucide="map-pin" aria-hidden="true" width="12" height="12"></i>
+                  Salt Lake, Kolkata
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="test-card" itemscope itemtype="https://schema.org/Review">
+            <div class="test-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+            </div>
+            <blockquote class="test-quote" itemprop="reviewBody">"Ordered 2kg dry fruit Thekua for Diwali. The gift packaging was beautiful, free delivery to Howrah on time. Everyone at the office loved it."</blockquote>
+            <div class="test-author">
+              <img class="test-avatar" src="https://picsum.photos/seed/person2/80/80" alt="" loading="lazy"/>
+              <div>
+                <div class="test-name" itemprop="author">Rajesh Gupta</div>
+                <div class="test-loc">
+                  <i data-lucide="map-pin" aria-hidden="true" width="12" height="12"></i>
+                  Shibpur, Howrah
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="test-card" itemscope itemtype="https://schema.org/Review">
+            <div class="test-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+            </div>
+            <blockquote class="test-quote" itemprop="reviewBody">"My family orders every month now. The coconut Thekua is extraordinary. I've tried many shops in Kolkata — none come close to this."</blockquote>
+            <div class="test-author">
+              <img class="test-avatar" src="https://picsum.photos/seed/person3/80/80" alt="" loading="lazy"/>
+              <div>
+                <div class="test-name" itemprop="author">Sunita Das</div>
+                <div class="test-loc">
+                  <i data-lucide="map-pin" aria-hidden="true" width="12" height="12"></i>
+                  Tollygunge, Kolkata
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="test-card" itemscope itemtype="https://schema.org/Review">
+            <div class="test-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+            </div>
+            <blockquote class="test-quote" itemprop="reviewBody">"I was sceptical ordering online but the WhatsApp process was smooth, payment at door, and the Thekua tasted better than anything from the market."</blockquote>
+            <div class="test-author">
+              <img class="test-avatar" src="https://picsum.photos/seed/person4/80/80" alt="" loading="lazy"/>
+              <div>
+                <div class="test-name" itemprop="author">Amit Tiwari</div>
+                <div class="test-loc">
+                  <i data-lucide="map-pin" aria-hidden="true" width="12" height="12"></i>
+                  Dum Dum, Kolkata
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="test-card" itemscope itemtype="https://schema.org/Review">
+            <div class="test-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+              <i data-lucide="star" aria-hidden="true" width="16" height="16" style="fill:var(--amber)"></i>
+            </div>
+            <blockquote class="test-quote" itemprop="reviewBody">"Arranged 5kg for our Durga Puja pandal. Delivered to Liluah on time, and the prasad ran out within hours. Will order again next year — easily double."</blockquote>
+            <div class="test-author">
+              <img class="test-avatar" src="https://picsum.photos/seed/person5/80/80" alt="" loading="lazy"/>
+              <div>
+                <div class="test-name" itemprop="author">Meena Chaudhary</div>
+                <div class="test-loc">
+                  <i data-lucide="map-pin" aria-hidden="true" width="12" height="12"></i>
+                  Liluah, Howrah
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination" style="margin-top:32px;position:relative;bottom:auto"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DELIVERY ══════════════ -->
+<section class="delivery-section" id="delivery" aria-labelledby="del-heading">
+  <div class="container">
+    <div class="reveal">
+      <div class="delivery-free-badge">
+        <i data-lucide="truck" aria-hidden="true" width="16" height="16"></i>
+        Free delivery — always
+      </div>
+      <div class="section-label">We come to you</div>
+      <h2 id="del-heading" class="section-h2">Every corner of<br/>Kolkata & Howrah</h2>
+      <p class="section-desc" style="max-width:480px">Not sure if we cover your area? Drop a WhatsApp and we'll confirm within minutes. Same-day delivery for orders placed before 2 PM.</p>
+      <div class="area-tags" role="list" aria-label="Delivery areas">
+        <span class="area-tag" role="listitem">Kolkata</span>
+        <span class="area-tag" role="listitem">Howrah</span>
+        <span class="area-tag" role="listitem">Salt Lake</span>
+        <span class="area-tag" role="listitem">New Town</span>
+        <span class="area-tag" role="listitem">Rajarhat</span>
+        <span class="area-tag" role="listitem">Dum Dum</span>
+        <span class="area-tag" role="listitem">Belgharia</span>
+        <span class="area-tag" role="listitem">Baranagar</span>
+        <span class="area-tag" role="listitem">Jadavpur</span>
+        <span class="area-tag" role="listitem">Tollygunge</span>
+        <span class="area-tag" role="listitem">Bhowanipur</span>
+        <span class="area-tag" role="listitem">Alipore</span>
+        <span class="area-tag" role="listitem">Park Street</span>
+        <span class="area-tag" role="listitem">Shibpur</span>
+        <span class="area-tag" role="listitem">Liluah</span>
+        <span class="area-tag" role="listitem">Bally</span>
+        <span class="area-tag" role="listitem">Santragachi</span>
+        <span class="area-tag" role="listitem">Salkia</span>
+        <span class="area-tag" role="listitem">Golabari</span>
+        <span class="area-tag" role="listitem">Uttarpara</span>
+        <span class="area-tag" role="listitem">+ more areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-side reveal">
+        <img class="faq-side-img" src="https://picsum.photos/seed/kitchen55/500/440" alt="Traditional Thekua making process" loading="lazy"/>
+        <div class="faq-contact-box">
+          <h4>Still have questions?</h4>
+          <p>Our team responds within minutes on WhatsApp — ask us anything about ingredients, delivery, or bulk orders.</p>
+          <a href="https://wa.me/919999999999?text=Hi%2C%20I%20have%20a%20question%20about%20Tasty%20Thekua" target="_blank" rel="noopener" class="faq-wa-btn">
+            <i data-lucide="message-circle" aria-hidden="true" width="16" height="16"></i>
+            Ask on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal" style="margin-bottom:40px">
+          <div class="section-label">Common questions</div>
+          <h2 id="faq-heading" class="section-h2">Everything you need<br/>to know</h2>
+        </div>
+        <div class="faq-items reveal" itemscope itemtype="https://schema.org/FAQPage">
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">What exactly is Thekua made from?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">Thekua is made from stone-ground whole wheat flour (atta), unrefined desi jaggery (gur), pure cow ghee, cardamom and fennel seeds. Some variants include fresh coconut, sesame, or dry fruits. We use absolutely no dalda, refined oil, artificial colours or preservatives.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">Do you deliver free in Howrah too?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">Yes — completely free delivery across all of Howrah including Shibpur, Liluah, Bally, Santragachi, Salkia, Golabari and surrounding areas. No delivery charge for any order size.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">How long does Thekua stay fresh?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">In an airtight container at room temperature — 2 weeks. Refrigerated — up to 1 month. The pure ghee acts as a natural preservative. We pack in food-grade airtight containers to ensure this.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">Can I order the same day?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">Yes — same-day delivery is available for orders placed before 2 PM. For larger orders (2kg+) we may need 24 hours' notice. WhatsApp us and we'll confirm timing right away.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">Do I need to pay online?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">No online payment whatsoever. We accept cash on delivery only — you pay when the Thekua arrives at your door. Zero prepayment risk.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text" itemprop="name">How do I pre-book for Chhath Puja?</span>
+              <div class="faq-icon"><i data-lucide="plus" aria-hidden="true" width="16" height="16"></i></div>
+            </div>
+            <div class="faq-a" role="region" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div class="faq-a-inner" itemprop="text">Chhath demand is very high. We recommend pre-booking at least 3–5 days in advance. Simply WhatsApp us with your name, quantity and delivery address in Kolkata or Howrah and we'll confirm your slot.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Tasty Thekua</div>
+        <div class="footer-desc">Authentic handmade Thekua crafted with pure cow ghee, desi jaggery and whole wheat. Delivered fresh across Kolkata and Howrah since three generations.</div>
+        <div class="footer-contacts">
+          <div class="footer-contact-item">
+            <i data-lucide="message-circle" aria-hidden="true" width="15" height="15" style="color:var(--amber-2);flex-shrink:0"></i>
+            <a href="https://wa.me/919999999999" target="_blank" rel="noopener">+91 99999 99999 (WhatsApp)</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" aria-hidden="true" width="15" height="15" style="color:var(--amber-2);flex-shrink:0"></i>
+            <a href="tel:+919999999999">+91 99999 99999</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="globe" aria-hidden="true" width="15" height="15" style="color:var(--amber-2);flex-shrink:0"></i>
+            <span>tastythekua.in</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#packages">Classic Wheat Thekua</a></li>
+          <li><a href="#packages">Coconut Thekua</a></li>
+          <li><a href="#packages">Dry Fruit Thekua</a></li>
+          <li><a href="#packages">Festival Family Pack</a></li>
+          <li><a href="#packages">Sesame Thekua</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Occasions</h4>
+        <ul>
+          <li><a href="#occasions">Chhath Puja</a></li>
+          <li><a href="#occasions">Diwali Gifting</a></li>
+          <li><a href="#occasions">Weddings</a></li>
+          <li><a href="#occasions">Durga Puja</a></li>
+          <li><a href="#occasions">Corporate Gifting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Areas</h4>
+        <ul>
+          <li><a href="#delivery">Kolkata</a></li>
+          <li><a href="#delivery">Howrah</a></li>
+          <li><a href="#delivery">Salt Lake</a></li>
+          <li><a href="#delivery">New Town</a></li>
+          <li><a href="#delivery">All areas →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Tasty Thekua · tastythekua.in · All rights reserved</div>
+      <div class="footer-seo">Best Thekua in Kolkata · Homemade Thekua Howrah · Thekua delivery near me</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ FLOATING WA ══════════════ -->
+<a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20Thekua!" target="_blank" rel="noopener" class="float-wa" aria-label="Order Thekua on WhatsApp">
+  <div class="float-wa-ring" aria-hidden="true"></div>
+  <i data-lucide="message-circle" aria-hidden="true" width="26" height="26"></i>
+</a>
+
+<!-- ══════════════ SCRIPTS ══════════════ -->
+<script>
+// Safe icon init
+try{ lucide.createIcons(); }catch(e){ console.warn('Lucide icons failed to load'); }
+
+// ── NAV scroll ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>60);
+},{passive:true});
+nav.classList.add('scrolled');
+
+// ── FAQ ──
+function toggleFaq(el){
+  const item = el.closest('.faq-item');
+  const ans = item.querySelector('.faq-a');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>{
+    i.classList.remove('open');
+    i.querySelector('.faq-a').style.maxHeight='0';
+    i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+  });
+  if(!isOpen){
+    item.classList.add('open');
+    ans.style.maxHeight = ans.scrollHeight+'px';
+    el.setAttribute('aria-expanded','true');
+  }
+}
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleFaq(q);}});
+});
+
+// ── Swiper ──
+const swiper = new Swiper('.testimonials-swiper',{
+  slidesPerView:1,
+  spaceBetween:24,
+  loop:true,
+  pagination:{el:'.swiper-pagination',clickable:true},
+  navigation:{nextEl:'.test-next',prevEl:'.test-prev'},
+  breakpoints:{700:{slidesPerView:2},1024:{slidesPerView:3}},
+  autoplay:{delay:5000,disableOnInteraction:false},
+});
+
+// ── GSAP ──
+gsap.registerPlugin(ScrollTrigger);
+
+// Set hero initial states via JS (not CSS) so fallback works without JS
+gsap.set('.hero-eyebrow',{opacity:0,y:20});
+gsap.set('.hero-h1',{opacity:0,y:30});
+gsap.set('.hero-desc',{opacity:0,y:20});
+gsap.set('.hero-actions',{opacity:0,y:20});
+gsap.set('.hero-stats',{opacity:0,x:30});
+gsap.set('.hero-scroll',{opacity:0});
+
+// Hero entrance
+const tl = gsap.timeline({defaults:{ease:'power3.out'}});
+tl.to('.hero-eyebrow',{opacity:1,y:0,duration:.7,delay:.2})
+  .to('.hero-h1',{opacity:1,y:0,duration:.8},'-=.4')
+  .to('.hero-desc',{opacity:1,y:0,duration:.7},'-=.5')
+  .to('.hero-actions',{opacity:1,y:0,duration:.6},'-=.4')
+  .to('.hero-stats',{opacity:1,x:0,duration:.8,ease:'power2.out'},'-=.6')
+  .to('.hero-scroll',{opacity:1,duration:.6},'-=.3');
+
+// Set reveal initial states via JS
+gsap.utils.toArray('.reveal').forEach(el=>{
+  gsap.set(el,{opacity:0,y:36});
+  gsap.to(el,{
+    opacity:1,y:0,duration:.7,ease:'power2.out',
+    scrollTrigger:{trigger:el,start:'top 86%',once:true}
+  });
+});
+</script>
+</body>
+</html>
