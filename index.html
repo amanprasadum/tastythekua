@@ -39,9 +39,77 @@
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Trail Pack First-Visit Popup -->
+  <style>
+    .trail-promo-overlay {
+      position: fixed; inset: 0; z-index: 20000; display: none;
+      align-items: center; justify-content: center; padding: 20px;
+      background: rgba(12, 22, 10, .72); backdrop-filter: blur(5px);
+    }
+    .trail-promo-overlay.is-visible { display: flex; }
+    .trail-promo-modal {
+      position: relative; width: min(440px, 100%); max-height: 90vh;
+      overflow-y: auto; background: #fff; border-radius: 22px;
+      padding: 18px 18px 24px; text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,.28);
+      animation: trailPromoIn .28s ease-out;
+    }
+    .trail-promo-close {
+      position: absolute; top: 10px; right: 10px; z-index: 2;
+      width: 36px; height: 36px; border: 0; border-radius: 50%;
+      background: rgba(255,255,255,.94); color: #26351f;
+      font-size: 25px; line-height: 1; cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,.12);
+    }
+    .trail-promo-image {
+      display: block; width: 100%; max-height: 310px;
+      object-fit: contain; border-radius: 14px; margin: 0 auto 15px;
+    }
+    .trail-promo-kicker {
+      color: #6c8d45; font-size: .72rem; font-weight: 800;
+      letter-spacing: .16em; text-transform: uppercase; margin-bottom: 7px;
+    }
+    .trail-promo-title {
+      color: #203b18; font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.65rem, 5vw, 2rem); font-weight: 700; margin: 0 0 8px;
+    }
+    .trail-promo-copy { color: #687263; font-size: .94rem; margin: 0 auto 18px; max-width: 320px; }
+    .trail-promo-order {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; width: min(100%, 280px); padding: 12px 24px;
+      border-radius: 999px; background: #2d5a1b; color: #fff;
+      text-decoration: none; font-weight: 700; transition: background .2s, transform .2s;
+    }
+    .trail-promo-order:hover { background: #1f4312; color: #fff; transform: translateY(-1px); }
+    @keyframes trailPromoIn { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    @media (max-width: 480px) {
+      .trail-promo-overlay { padding: 14px; }
+      .trail-promo-modal { padding: 14px 14px 20px; border-radius: 18px; }
+      .trail-promo-image { max-height: 260px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .trail-promo-modal { animation: none; }
+      .trail-promo-order { transition: none; }
+    }
+  </style>
+
 </head>
 
 <body>
+
+
+  <!-- Trail Pack First-Visit Popup -->
+  <div class="trail-promo-overlay" id="trailPromoModal" aria-hidden="true">
+    <div class="trail-promo-modal" role="dialog" aria-modal="true" aria-labelledby="trailPromoTitle">
+      <button class="trail-promo-close" id="trailPromoClose" type="button" aria-label="Close popup">&times;</button>
+      <img class="trail-promo-image" src="assets/images/trail.png" alt="Tasty Thekua Trail Pack">
+      <div class="trail-promo-kicker">A little taste of tradition</div>
+      <h2 class="trail-promo-title" id="trailPromoTitle">Try Our Trail Pack</h2>
+      <p class="trail-promo-copy">Discover the traditional taste of homemade Thekua. Order your pack today!</p>
+      <a class="trail-promo-order" href="https://wa.me/918481832529?text=Hi!%20I%27d%20like%20to%20order%20the%20Trail%20Pack." target="_blank" rel="noopener noreferrer">Order Now</a>
+    </div>
+  </div>
 
   <!-- ═══ NAVBAR ═══ -->
   <nav id="navbar" aria-label="Main navigation">
@@ -1075,6 +1143,36 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
 
   <script>
+
+    // ── TRAIL PACK FIRST-VISIT POPUP ──
+    (() => {
+      const popup = document.getElementById('trailPromoModal');
+      const closeBtn = document.getElementById('trailPromoClose');
+      const storageKey = 'tastyThekuaTrailPopupSeen';
+      if (!popup || localStorage.getItem(storageKey)) return;
+
+      const closePopup = () => {
+        popup.classList.remove('is-visible');
+        popup.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        localStorage.setItem(storageKey, 'yes');
+      };
+
+      closeBtn.addEventListener('click', closePopup);
+      popup.addEventListener('click', (event) => {
+        if (event.target === popup) closePopup();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && popup.classList.contains('is-visible')) closePopup();
+      });
+
+      window.setTimeout(() => {
+        popup.classList.add('is-visible');
+        popup.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }, 900);
+    })();
+
     // ── NAVBAR SCROLL ──
     window.addEventListener('scroll', () => {
       document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
