@@ -1148,14 +1148,17 @@
     (() => {
       const popup = document.getElementById('trailPromoModal');
       const closeBtn = document.getElementById('trailPromoClose');
-      const storageKey = 'tastyThekuaTrailPopupSeen';
-      if (!popup || localStorage.getItem(storageKey)) return;
+      const storageKey = 'tastyThekuaTrailPopupSeen_v2';
+      if (!popup) return;
+      let alreadySeen = false;
+      try { alreadySeen = localStorage.getItem(storageKey) === 'yes'; } catch (error) {}
+      if (alreadySeen) return;
 
       const closePopup = () => {
         popup.classList.remove('is-visible');
         popup.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
-        localStorage.setItem(storageKey, 'yes');
+        try { localStorage.setItem(storageKey, 'yes'); } catch (error) {}
       };
 
       closeBtn.addEventListener('click', closePopup);
