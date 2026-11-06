@@ -2199,3 +2199,184 @@ a {
     height: 100%;
     object-fit: cover; */
 }
+
+
+/* ═══ SITE-WIDE ACTION BUTTON SYSTEM ═══
+   Unified pill buttons inspired by the approved CTA reference.
+   Existing links, labels and actions remain unchanged.
+*/
+:root {
+    --site-button-green: var(--green-dark);
+    --site-button-green-hover: var(--green-footer);
+}
+.nav-btn,
+.mega-order-btn,
+.mega-wa-cta,
+.btn-hero-primary,
+.btn-hero-outline,
+.btn-wa-pack,
+.occ-order-btn,
+.chip-cta,
+.btn-wa-f,
+.btn-cta-w,
+.btn-cta-o,
+.trail-promo-order,
+.btn-primary-g {
+    min-height: 48px;
+    padding: 7px 9px 7px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-radius: 999px;
+    font-family: 'Inter', sans-serif;
+    font-size: .88rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    box-shadow: none;
+    transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.nav-btn::after,
+.mega-order-btn::after,
+.mega-wa-cta::after,
+.btn-hero-primary::after,
+.btn-hero-outline::after,
+.btn-wa-pack::after,
+.occ-order-btn::after,
+.chip-cta::after,
+.btn-wa-f::after,
+.btn-cta-w::after,
+.btn-cta-o::after,
+.trail-promo-order::after,
+.btn-primary-g::after {
+    content: "↗";
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.05rem;
+    line-height: 1;
+}
+.nav-btn,
+.mega-order-btn,
+.mega-wa-cta,
+.btn-hero-primary,
+.btn-wa-pack,
+.occ-order-btn,
+.chip-cta,
+.btn-wa-f,
+.btn-cta-w,
+.trail-promo-order,
+.btn-primary-g {
+    background: #fff;
+    color: var(--site-button-green);
+    border: 1px solid rgba(255,255,255,.9);
+}
+.nav-btn::after,
+.mega-order-btn::after,
+.mega-wa-cta::after,
+.btn-hero-primary::after,
+.btn-wa-pack::after,
+.occ-order-btn::after,
+.chip-cta::after,
+.btn-wa-f::after,
+.btn-cta-w::after,
+.trail-promo-order::after,
+.btn-primary-g::after {
+    background: var(--site-button-green);
+    color: #fff;
+}
+.btn-hero-outline,
+.btn-cta-o {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.72);
+}
+.btn-hero-outline::after,
+.btn-cta-o::after {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+}
+.nav-btn:hover,
+.mega-order-btn:hover,
+.mega-wa-cta:hover,
+.btn-hero-primary:hover,
+.btn-wa-pack:hover,
+.occ-order-btn:hover,
+.chip-cta:hover,
+.btn-wa-f:hover,
+.btn-cta-w:hover,
+.trail-promo-order:hover,
+.btn-primary-g:hover {
+    background: #edf5e8;
+    color: var(--site-button-green);
+    border-color: #edf5e8;
+    transform: translateY(-2px);
+}
+.btn-hero-outline:hover,
+.btn-cta-o:hover {
+    background: rgba(255,255,255,.14);
+    color: #fff;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+/* Keep compact cards tidy while using the same button shape. */
+.mega-order-btn,
+.occ-order-btn,
+.chip-cta {
+    min-height: 42px;
+    padding-left: 15px;
+    gap: 8px;
+    font-size: .78rem;
+}
+.mega-order-btn::after,
+.occ-order-btn::after,
+.chip-cta::after {
+    flex-basis: 28px;
+    width: 28px;
+    height: 28px;
+    font-size: .95rem;
+}
+.btn-wa-pack {
+    width: 100%;
+    margin-top: auto;
+}
+.btn-wa-f {
+    width: fit-content;
+}
+.cta-banner .btn-cta-w,
+.cta-banner .btn-cta-o {
+    min-height: 52px;
+}
+@media (max-width: 767px) {
+    .nav-btn,
+    .mega-wa-cta,
+    .btn-hero-primary,
+    .btn-hero-outline,
+    .btn-wa-pack,
+    .btn-wa-f,
+    .trail-promo-order {
+        min-height: 46px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .nav-btn,
+    .mega-order-btn,
+    .mega-wa-cta,
+    .btn-hero-primary,
+    .btn-hero-outline,
+    .btn-wa-pack,
+    .occ-order-btn,
+    .chip-cta,
+    .btn-wa-f,
+    .btn-cta-w,
+    .btn-cta-o,
+    .trail-promo-order,
+    .btn-primary-g {
+        transition: none;
+    }
+}
