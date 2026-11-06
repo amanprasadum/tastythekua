@@ -2111,9 +2111,9 @@ a {
    PRODUCT SHOWCASE BANNER
 ══════════════════════════ */
 .showcase-banner {
-    width: 100%;
+    /* width: 100%;
     overflow: hidden;
-    aspect-ratio: 1439 / 661;
+    aspect-ratio: 1439 / 661; */
 }
 
 .showcase-banner img {
