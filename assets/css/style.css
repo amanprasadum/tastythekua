@@ -2494,3 +2494,123 @@ a {
         transition: none;
     }
 }
+
+
+/* ── NIMKI ENQUIRY SECTION ── */
+.nimki-section {
+    padding: 56px 24px 72px;
+    background: var(--cream);
+}
+.nimki-banner {
+    position: relative;
+    width: min(1280px, 100%);
+    min-height: 250px;
+    margin: 0 auto 42px;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #173b2c;
+}
+.nimki-banner > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nimki-banner-overlay {
+    position: relative;
+    z-index: 1;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 36px clamp(24px, 6vw, 76px);
+    color: #fff;
+    background: linear-gradient(90deg, rgba(8, 35, 23, .82), rgba(8, 35, 23, .48) 55%, rgba(8, 35, 23, .08));
+}
+.nimki-eyebrow {
+    margin-bottom: 9px;
+    color: #d7edbd;
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.nimki-banner-overlay h2 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    font-weight: 800;
+}
+.nimki-banner-overlay p {
+    max-width: 520px;
+    margin: 0;
+    color: rgba(255,255,255,.9);
+    font-size: 1rem;
+}
+.nimki-content {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(28px, 6vw, 76px);
+    width: min(1060px, 100%);
+    margin: 0 auto;
+}
+.nimki-product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    padding: 22px;
+    border: 1px solid rgba(49, 91, 37, .12);
+    border-radius: 24px;
+    background: #fff;
+}
+.nimki-product-image img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    max-height: 360px;
+    object-fit: contain;
+}
+.nimki-copy .sec-title {
+    margin-bottom: 14px;
+}
+.nimki-copy .sec-sub {
+    margin: 0 0 24px;
+    text-align: left;
+}
+.nimki-enquiry-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: #1f6b3b;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 22px rgba(31,107,59,.18);
+    transition: transform .2s ease, background .2s ease;
+}
+.nimki-enquiry-btn:hover {
+    transform: translateY(-2px);
+    background: #174f2c;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .nimki-section { padding: 36px 16px 52px; }
+    .nimki-banner, .nimki-banner-overlay { min-height: 220px; }
+    .nimki-banner { margin-bottom: 28px; border-radius: 16px; }
+    .nimki-banner-overlay { padding: 26px 22px; }
+    .nimki-banner-overlay p { max-width: 300px; font-size: .9rem; }
+    .nimki-content { grid-template-columns: 1fr; gap: 24px; }
+    .nimki-product-image { min-height: 220px; padding: 14px; }
+    .nimki-product-image img { max-height: 280px; }
+    .nimki-copy { text-align: center; }
+    .nimki-copy .sec-sub { text-align: center; }
+    .nimki-enquiry-btn { width: 100%; }
+}
